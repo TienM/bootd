@@ -1,9 +1,3 @@
 # Lab
 
-A repository for projects in the pipeline.  
-- (bootd)
-
-Site | Link
------------- | ------------
- ReadMe | #
- Deployment | #
+A personal dictionary and repository for tutorial and resource links.
