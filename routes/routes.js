@@ -1,14 +1,14 @@
 module.exports = function(app) {
   app.get('/', function(req, res) {
-    res.render('index.ejs');
+    res.render('index.hbs', { title: 'Bootd. | Home' });
   });
   app.get('/languages', function(req, res) {
-    res.render('languages.ejs')
+    res.render('languages.hbs', { title: 'Bootd. | Languages'});
   });
   app.get('/dictionary', function(req, res) {
-    res.render('dictionary.ejs')
+    res.render('dictionary.hbs', { title: 'Bootd. | Dictionary' });
   });
   app.get('/resources', function(req, res) {
-    res.render('resources.ejs')
+    res.render('resources.hbs', { title: 'Bootd. | Resources'});
   });
 };
