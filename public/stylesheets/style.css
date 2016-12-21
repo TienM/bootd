@@ -1,5 +1,15 @@
 body {
   line-height: 1.5em;
-  background-color: #97aa48;
-  font-weight: 400;
+}
+p {
+  text-align: center;
+}
+.navbar-fixed-bottom {
+  text-align: center;
+  padding-top: 50px;
+  background-color: black;
+}
+a .footer-link{
+  text-decoration: none;
+  color: white;
 }
