@@ -13,7 +13,7 @@ app.use(flash()); //for flash messages stored in session
 require('./routes/routes.js')(app);
 
 
-app.listen(5000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("The magic happens on port 3000!");
 });
 
