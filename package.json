@@ -9,15 +9,12 @@
   "author": "Tien Mata",
   "license": "ISC",
   "dependencies": {
-    "angular": "latest",
-    "angular-route": "latest",
     "animate.css": "latest",
     "bootstrap": "latest",
-    "bson": "^1.0.1",
-    "connect-flash": "~0.1.1",
-    "ejs": "~0.8.5",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "mongoose": "~3.8.1"
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "mongojs": "^2.4.0"
   }
 }

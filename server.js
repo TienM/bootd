@@ -1,14 +1,11 @@
 var express  = require('express');
-var app      = express();
-var mongoose = require('mongoose');
-var flash    = require('connect-flash');
+var bodyParser = require('body-parser');
 var hbs      = require('express-handlebars');
 
-//mongoose.connect(process.env.MONGO_URL);
+var app      = express();
 
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts'}));
 app.set('view engine', 'hbs');
-app.use(flash()); //for flash messages stored in session
 
 require('./routes/routes.js')(app);
 
