@@ -1,37 +1,14 @@
 <style>
 body {
-  background-color: #85715b;
   line-height: 1.5em;
+  font-family: 'Nunito Sans', sans-serif;
 }
-h6 {
-  font-style: italic;
-}
-
 </style>
-<br><br><br>
- <h3>Dependency Injection</h3>
- <h6>2; Handlebars</h6>
-<p>Giving an object its instance variables.</p>
-  <h3>Document Object Model (DOM)</h3>
-  <h6>2; Javascript</h6>
-<p>The structure used to create HTML documents; a mathematical structure where
-  each HTML tag is a node.</p>
-  <h3>Immediately Invoked Function Expression (IIFE)</h3>
-  <h6>3</h6>
-<p>Prevents local functions from bleeding out into the local scope.</p>
-  <h3>Promise</h3>
-  <h6>2; Javascript</h6>
-<p>A future value, uses callbacks.</p>
-  <h3>Software Library</h3>
-  <h6>1</h6>
-<p>A collection of implementations of behaviors with a well-defined interface by which
-   you can invoke those behaviors. Allows for modular design.</p>
-  <h3>Framework</h3>
-  <h6>1</h6>
-<p>A construct where the software provides certain generic functionalities, which you can
-  add to in order to focus on those other functionalities. Saves a lot of time.</p>
-  <h3>.env</h3>
-  <h6>3</h6>
-<p>Environment variable file; has confidential passwords and API keys.</p>
 
-  <br><br><br>
+<h1>Dictionary</h1>
+<br>
+<script id="terms" type="text/x-handlebars-template">​
+ <div> {{ term }} </div>
+ <div> {{ level }}​ , {{ language }}</div>
+ <div> {{ definition}} </div>
+​</script>
