@@ -12,6 +12,7 @@ var express    = require('express'),
 
   //Connect to Database
   mongoose.connect('mongodb://TienM:rain01@ds143608.mlab.com:43608/bootd');
+  require('./models/terms.js')(app);
   //Routes
   require('./routes/routes.js')(app);
   //configure app to handle CORS requests
