@@ -1,7 +1,12 @@
 <h1>Dictionary</h1>
 <br>
-<script id="terms" type="text/x-handlebars-template">​
- <div> {{ term }} </div>
- <div> {{ level }}​ , {{ language }}</div>
- <div> {{ definition}} </div>
-​</script>
+<div>
+<script id="terms" type="text/x-handlebars-template">
+
+  {{#each term}}
+    <div>{{ term }}</div>
+    <p>{{ level }}, {{ language }}</p>
+    {{#each definition}}
+    <p>{{ definition }}
+      {{/each}}
+  {{/each}}

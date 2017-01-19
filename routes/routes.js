@@ -1,3 +1,16 @@
+var express = require('express'),
+    router  = express.Router(),
+    Term    = require('../models/terms');
+
+    router.get('/term/:title', function(req,res){
+      var title = req.params.title;
+      Product.find({'term' : term }, function(err, Term){
+    	console.log(Term);
+        res.render('term', { Term: Term });
+    	});
+    });
+
+
 module.exports = function(app) {
   app.get('/', function(req, res) {
     res.render('dictionary.hbs', { title: 'Bootd. | Home' });
@@ -21,3 +34,12 @@ module.exports = function(app) {
     res.render('chill.hbs', { title: 'Bootd | Chill'});
   });
 };
+
+router.get('/all', function(req, res, next) {
+  Product.find({'term'},function(err, Term){
+  console.log(term.length);
+  res.render('shop/index', { title: 'Menu', Product: Product });
+});
+});
+
+module.exports = router;

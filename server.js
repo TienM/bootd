@@ -11,7 +11,6 @@ var express    = require('express'),
   app.set('view engine', 'hbs');
 
   //Connect to Database
-  mongoose.connect('mongodb://TienM:rain01@ds143608.mlab.com:43608/bootd');
   require('./models/terms.js')(app);
   //Routes
   require('./routes/routes.js')(app);
@@ -34,7 +33,7 @@ var express    = require('express'),
       res.json({ message: 'Welcome to the Bibliosphere.' });
     });
     app.use('/resources', resourceRouter);
-    */
+*/
 
 //Error Stack
 app.use(function (req, res, next) {
