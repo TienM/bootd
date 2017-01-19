@@ -1,13 +1,262 @@
 <h1>Dictionary</h1>
 <br>
 <div>
-<script id="terms" type="text/x-handlebars-template">
+  <div>
+    <h5>Abstract Data Type</h5>
+    <div id="paragraph">
+    <i>3, General</i>
+    <p>A logical description of how we view and allow operations without regard
+to implementing them.</p>
+    </div>
+  </div>
+  <div>
+    <h5>ACID (Atomicity, Consistency, Isolation, Durability)</h5>
+    <div id="paragraph"><i>3, General</i>
+    <p>Each transaction must be all or nothing. Any program errors can't result
+in the violation of any defined rules. Ensure that concurrent transactions end
+in the same state as if each transaction had been handled separately. Once a
+transaction is committed, it remains so.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Activecode</h5>
+    <div id="paragraph">
+    <i>1, Python</i>
+    <p>A unique interpreter environment that allows Python to be executed in a
+web browser.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Asynchronous Callback</h5>
+    <div id="paragraph">
+    <i>4, General</i>
+    <p>A function that is passed as an argument to be executed when it's ready.
+Used when it may need more time to execute and return correct values. Basically,
+like in math class when a teacher would ask you something, wait two seconds, and
+say, "We'll get back to you!" before moving on. It's just like that.</p>
+    </div>
+  </div>
 
-  {{#each term}}
-    <div>{{ term }}</div>
-    <p>{{ level }}, {{ language }}</p>
-    {{#each definition}}
-    <p>{{ definition }}
-      {{/each}}
-  {{/each}}
-</script>
+  <div>
+    <h5>Byte Code</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>Intermediate code between the source and object codes. Many high-level
+languages compile into byte code, which is interpreted by a virtual machine.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Codelens</h5>
+    <div id="paragraph">
+    <i>2, Python</i>
+    <p>Interactive environment that allows you to control step-by-step execution
+ of Python.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Compile</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>Translating high code into machine code all at once, in preparation for
+execution. I mean, like, who has time for byte code?</p>
+    </div>
+  </div>
+  <div>
+    <h5>CORS (Cross-Origin Resource Sharing)</h5>
+    <div id="paragraph">
+    <i>4, General</i>
+    <p> a mechanism that allows restricted resources (e.g. fonts) on a web page
+to be requested from another domain outside the domain from which the first
+resource was served.<p>
+    </div>
+  </div>
+  <div>
+    <h5>Data Structure</h5>
+    <div id="paragraph">
+    <i>2, General</i>
+    <p>Implementation of an abstract data type.</p>
+    </div>
+  </div>
+  <div>
+    <h5>dotenv</h5>
+    <div id="paragraph">
+    <i>4, General</i>
+    <p>Environment variable file. Keeps confidential information like passwords
+and API keys secure, be very careful about keeping all of that in the dotenv.</p>
+    </div>
+  </div>
+  <div>
+    <h5>DRY (Don't Repeat Yourself)</h5>
+    <div id="paragraph">
+    <i>3, General</i>
+    <p>Principle of development, aimed at reducing repetition in everything,
+ especially useful in multitier architecture.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Exception</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>Runtime error. Does not appear until the program is running, but can't
+let the program progress.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Javascript</h5>
+    <div id="paragraph">
+    <i>1, Javascript</i>
+    <p>The most passive-aggressive language of all. Will let you do whatever you
+ want, no really, it's fine like that. It'll just figure out how to do it on its
+  own. It's fine just leave it alone.</p>
+    </div>
+  </div>
+  <div>
+    <h5>KISS (Keep It Super Simple)</h5>
+    <div id="paragraph">
+    <i>3, General</i>
+    <p>Most systems work best if they are kept simple rather than made
+complicated; therefore simplicity should be a key goal in design. Realistically,
+you're not gonna be able to keep up with it. Keep it simple.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Semantic Error</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>When the program works, just not the way you wanted. Mostly occurs in
+Javascript, due to the highly flexible nature of the language.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Sharding</h5>
+    <div id="paragraph">
+    <i>3, General</i>
+    <p>A method for distributing data across servers by partitioning data into
+chunks with the shard key</p>
+    </div>
+  </div>
+  <div>
+    <h5>Syntax Error</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>When you forget to type something dumb like the semicolon. It's always a
+semicolon. Just check the semicolons really quick.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Token</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>"A 'word' in the statement your code is trying to make.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Tuple</h5>
+    <div id="paragraph">
+    <i>2, General</i>
+    <p>A finite, ordered list of elements.</p>
+    </div>
+  </div>
+  <div>
+    <h5>REST</h5>
+    <div id="paragraph">
+    <i>2, General</i>
+    <p>1) Representational State Transfer. One way of providing interoperability
+ between computer systems on the Internet. Intended to evoke an image of how a
+ well-designed Web app behaves: it is a network of Web resources where the user
+ progresses through the application by selecting links, and operations such as
+ GET(state transitions), resulting in the next resource (representing the next
+ state of the application) being transferred to the user to do whatever they
+ want with it.<p>
+   <p>2) Something you probably need more of. Go take a nap.</p>
+    </div>
+  </div>
+  <div>
+    <h5>V8</h5>
+    <div id="paragraph">
+    <i>3, General</i>
+    <p>Open-source Javascript engine developed by Chrome's Chromium Project.
+Compiles Javascript to native machine code before executing and optimizing
+dynamically at runtime based on execution profile. Also a juice you might want
+to think about trying after 4 weeks of Subway. </p>
+    </div>
+  </div>
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+  <div>
+    <h5>Algorithm</h5>
+    <div id="paragraph">
+    <i>1, General</i>
+    <p>A general step-by-step process for solving a problem.</p>
+    </div>
+  </div>
+
+</div>
+<br><br><br><br>
