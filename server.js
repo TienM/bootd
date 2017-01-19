@@ -15,15 +15,26 @@ var express    = require('express'),
   require('./models/terms.js')(app);
   //Routes
   require('./routes/routes.js')(app);
-  //configure app to handle CORS requests
-app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
-  next();
-});
 
-  app.use(morgan('dev'));
+/*  //API Routes
+    var gameRouter = express.Router();
+    gameRouter.get('/', function(req, res) {
+      res.json({ message: 'Welcome to the Nightosphere.' });
+    });
+    app.use('/games', gameRouter);
+
+    var lessonRouter = express.Router();
+    lessonRouter.get('/', function(req, res) {
+      res.json({ message: 'Welcome to the Bibliosphere.' });
+    });
+    app.use('/lessons', lessonRouter);
+
+    var resourceRouter = express.Router();
+    resourceRouter.get('/', function(req, res) {
+      res.json({ message: 'Welcome to the Bibliosphere.' });
+    });
+    app.use('/resources', resourceRouter);
+    */
 
 //Error Stack
 app.use(function (req, res, next) {
