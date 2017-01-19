@@ -3,24 +3,36 @@
   body {
     line-height: 1;
     font-family: 'Nunito Sans' sans-serif;
+    padding-bottom: 12em;
   }
   .navbar-fixed-bottom {
     text-align: center;
     padding-top: 15px;
     background-color: #414a4c;
   }
-  .footer-link {
+  .footer {
     text-decoration: none;
     color: white;
     font-size: .825em;
   }
+  .footer-header {
+    text-decoration: none;
+    color: white;
+    }
   a {
     color: #000;
+    }
+  a:hover {
     text-decoration: none;
+    color: #939393;
   }
   #paragraph {
     font-size: .825em;
   }
+  ul {
+    list-style-type: none;
+  }
+
   </style>
 
 
@@ -30,7 +42,9 @@
       <title>{{ title }}</title>
       <link rel="stylesheet" href="./public/stylesheets/style.css">
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400" rel="stylesheet">
       <script src="handlebars-v3.0.0.js"></script>
     </head>
